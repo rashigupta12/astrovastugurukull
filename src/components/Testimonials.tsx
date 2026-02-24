@@ -1,6 +1,6 @@
 'use client'
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
 import { testimonials } from '../data/mockData';
 
 const Testimonials = () => {

@@ -9,6 +9,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { navCategories } from "../data/mockData";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
@@ -58,7 +59,7 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <a href="/" className="flex-shrink-0 mr-4">
+          <Link href="/" className="flex-shrink-0 mr-4">
             <span
               className="text-[20px] lg:text-[24px] font-extrabold tracking-tight text-[#1c1d1f] whitespace-nowrap"
               style={{
@@ -68,7 +69,7 @@ const Navbar = () => {
             >
               Astrovastu Gurukull
             </span>
-          </a>
+          </Link>
 
           {/* Categories dropdown */}
           <div className="hidden lg:block relative" ref={categoryRef}>

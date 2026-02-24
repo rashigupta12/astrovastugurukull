@@ -26,7 +26,7 @@ const BusinessPlans = () => {
   return (
     <section className="py-12 max-w-[1340px] mx-auto px-6">
       <h2 className="font-serif text-2xl md:text-[1.75rem] font-bold text-[#1c1d1f] mb-2">
-        Grow your team's skills and your business
+        Grow your team &apos;s skills and your business
       </h2>
       <p className="text-[#6a6f73] text-base mb-8">
         Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more.

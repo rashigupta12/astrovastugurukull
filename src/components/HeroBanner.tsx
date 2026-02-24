@@ -39,14 +39,17 @@ const HeroBanner = () => {
             }`}
           >
             {/* Background image for larger screens */}
-            <div className="hidden md:block absolute right-0 top-0 h-full w-full">
-              <img
-                src={banner.image}
-                alt={banner.title}
-                className="w-full h-full object-cover"
-                onError={(e) => { e.target.style.display = 'none'; }}
-              />
-            </div>
+           {/* Background image for larger screens */}
+<div className="hidden md:block absolute right-0 top-0 h-full w-full">
+  <img
+    src={banner.image}
+    alt={banner.title}
+    className="w-full h-full object-cover"
+    onError={(e) => { 
+      (e.target as HTMLImageElement).style.display = 'none'; 
+    }}
+  />
+</div>
 
             {/* Content card */}
             <div className="relative z-20 max-w-[1340px] mx-auto px-6 h-full flex items-center">

@@ -1,6 +1,8 @@
 // Detailed course data for course pages
+/*eslint-disable  @typescript-eslint/no-unused-vars  */
+/*eslint-disable @typescript-eslint/no-explicit-any */
 
-const generateCurriculum = (topic) => {
+const generateCurriculum = (topic: any) => {
   const curriculumTemplates = {
     default: [
       {
@@ -63,7 +65,7 @@ const generateCurriculum = (topic) => {
   return curriculumTemplates.default;
 };
 
-const generateReviews = (courseTitle) => [
+const generateReviews = (courseTitle: any) => [
   {
     id: 1,
     name: "Sarah M.",
@@ -98,7 +100,7 @@ const generateReviews = (courseTitle) => [
   }
 ];
 
-export const courseDetails = {
+export const courseDetails: { [key: number]: any } = {
   1: {
     id: 1,
     title: "ChatGPT Complete Guide: Learn Generative AI, ChatGPT & More",
@@ -195,7 +197,7 @@ export const courseDetails = {
 };
 
 // Generate detail for any course ID that doesn't have explicit detail
-export const getOrGenerateCourseDetail = (courseId, basicCourse) => {
+export const getOrGenerateCourseDetail = (courseId: number, basicCourse: { id: number; title: string; instructor: string; rating: number; reviews: number; price: number; originalPrice: number; image: string; bestseller: boolean; hours: number; lectures: number; level: string; } | null) => {
   if (courseDetails[courseId]) {
     const detail = courseDetails[courseId];
     return {

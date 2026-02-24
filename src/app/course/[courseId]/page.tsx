@@ -1,18 +1,34 @@
+/*eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import { useParams } from 'next/navigation';
-import Image from 'next/image';
-import {
-  Star, Clock, BarChart3, Globe, Award, ChevronDown, ChevronUp,
-  Play, FileText, Download, Smartphone, Trophy, Check, Heart,
-  Share2, Gift, AlertCircle, Users, BookOpen, ChevronRight, ThumbsUp
-} from 'lucide-react';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import { getOrGenerateCourseDetail } from '@/data/courseDetailData';
 import { skillCourses } from '@/data/mockData';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import {
+  AlertCircle,
+  Award,
+  Check,
+  ChevronDown,
+  ChevronRight,
+  ChevronUp,
+  Clock,
+  Download,
+  FileText,
+  Gift,
+  Globe,
+  Play,
+  Share2,
+  Smartphone,
+  Star,
+  ThumbsUp,
+  Trophy,
+  Users
+} from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 // Types
 interface Lecture {
@@ -222,7 +238,7 @@ const CoursePage = () => {
 
             {/* What you'll learn */}
             <div className="border border-[#d1d7dc] p-6 mb-8">
-              <h2 className="text-xl font-bold text-[#1c1d1f] mb-4">What you'll learn</h2>
+              <h2 className="text-xl font-bold text-[#1c1d1f] mb-4">What you &apos;ll learn</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {course.whatYouWillLearn?.map((item, idx) => (
                   <div key={idx} className="flex gap-3">

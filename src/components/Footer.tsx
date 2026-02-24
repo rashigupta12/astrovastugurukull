@@ -1,6 +1,7 @@
 import React from 'react';
 import { Globe } from 'lucide-react';
 import { footerLinks } from '../data/mockData';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -66,11 +67,11 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-[#3e4143]">
         <div className="max-w-[1340px] mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
-          <a href="/" className="mb-4 md:mb-0">
+          <Link href="/" className="mb-4 md:mb-0">
             <span className="text-[22px] font-extrabold tracking-tight text-white" style={{ fontFamily: "'DM Serif Display', Georgia, serif", letterSpacing: '-0.01em' }}>
               Astrovastu Gurukull
             </span>
-          </a>
+          </Link>
           <p className="text-sm text-[#6a6f73]">&copy; 2025 Astrovastu Gurukull, Inc.</p>
         </div>
       </div>
